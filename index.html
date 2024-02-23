@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>加密货币交易利润计算器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #4cae4c;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #e9e9e9;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>加密货币交易利润计算器</h1>
+    <form id="cryptoForm">
+        <label for="cryptoType">选择加密货币类型:</label>
+        <select id="cryptoType" name="cryptoType">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+        </select><br><br>
+
+        <div id="purchaseSection">
+            <h3>购入信息</h3>
+            <label for="purchaseDate">购入日期:</label>
+            <input type="date" id="purchaseDate" name="purchaseDate">
+            <label for="purchaseAmount">购入数量:</label>
+            <input type="number" id="purchaseAmount" name="purchaseAmount" step="0.0001"><br>
+        </div>
+
+        <div id="saleSection">
+            <h3>卖出信息</h3>
+            <label for="saleDate">卖出日期:</label>
+            <input type="date" id="saleDate" name="saleDate">
+            <label for="saleAmount">卖出数量:</label>
+            <input type="number" id="saleAmount" name="saleAmount" step="0.0001"><br>
+        </div>
+
+        <input type="submit" value="计算利润">
+    </form>
+
+    <div id="result">
+        <!-- 计算结果将在此处显示 -->
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            <h1>加密货币交易利润计算器</h1>
+        </div>
+        <div class="container">
+            <!-- 表单内容 -->
+        </div>
+    </div>
+    <!-- ... -->
+    <script src="script.js"></script>
+</body>
+</html>

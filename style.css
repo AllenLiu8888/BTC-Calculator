@@ -1,0 +1,88 @@
+/* 设定整体字体和背景 */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 页面内容居中 */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 标题样式，置于主体内容上方 */
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 页面主体部分 */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* 表单控件容器，使标签和输入框在一行显示 */
+.form-group {
+    margin-bottom: 15px; /* 行间距 */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+/* 结果展示区域 */
+#result {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 按钮样式 */
+input[type="submit"] {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 30px; /* 增加与上方控件的间距 */
+}
+
+input[type="submit"]:hover {
+    background-color: #ccc;
+}
+
+/* 输入框样式 */
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* 调整响应式设计 */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+}
